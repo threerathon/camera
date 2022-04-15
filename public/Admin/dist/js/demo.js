@@ -686,4 +686,13 @@
     $brand_variants.find('option.' + active_brand_color).prop('selected', true)
     $brand_variants.removeClass().addClass('custom-select mb-3 text-light border-0 ').addClass(active_brand_color)
   }
-})(jQuery)
+})(jQuery);
+// $('#edit').on('show.bs.modal', function (event) {
+//   var button = $(event.relatedTarget) // Button that triggered the modal
+//   var recipient = button.data('whatever') // Extract info from data-* attributes
+//   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+//   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+//   var modal = $(this)
+//   modal.find('.modal-title').text('New message to ' + recipient)
+//   modal.find('.modal-body input').val(recipient)
+// })

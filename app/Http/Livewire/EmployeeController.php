@@ -46,7 +46,8 @@ class EmployeeController extends Component
 
     public function detailEmployee($id){
         $employees = employee::where('code_employee', '=', $id)->first();
-        $this->detailEmployee = $employees;     
+        $this->detailEmployee = $employees;
+        //  
         // return view('livewire.employee-controller',compact('employees'));
         // $employee = Employee::where('code_employee',$id);
         // dd($employee);

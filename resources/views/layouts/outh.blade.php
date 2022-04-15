@@ -33,5 +33,17 @@
 <script src="{{asset('Admin/dist/js/demo.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('Admin/dist/js/pages/dashboard3.js')}}"></script>
+<script>
+    $('#edit').on('show.bs.modal', function (event) {
+        console.log('click vào rồi nhaaa');
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
 </body>
 </html>
